@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from explorer-html.wearecodevision.com/admin-dashboard-light-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 07:26:12 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="assets/libraries/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="assets/libraries/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/trackpad-scroll-emulator.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/chartist.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/jquery.raty.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/nouislider.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/explorer.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title>Dashboard - Admin - Explorer</title>
+  </head>
+  <body class="admin-sidebar-light">
+    <div class="admin-wrapper">
+      <div class="admin-sidebar">
+        <div class="admin-sidebar-header">
+          <div class="admin-sidebar-logo">
+            <a href="admin-dashboard-light-sidebar.html">
+              <img src="assets/img/logo.svg" class="svg" alt="Home">
+            </a>
+            <a href="admin-dashboard-light-sidebar.html" class="admin-sidebar-logo-title">
+              <strong>ADMIN</strong>
+              <span>Panel</span>
+            </a>
+          </div>
+          <!-- /.admin-sidebar-logo -->
+        </div>
+        <!-- /.admin-sidebar-header -->
+        <div class="admin-sidebar-content">
+          <h3>General Objects</h3>
+          <ul class="nav flex-column">
+            <!-- <li class="nav-item has-sub-menu"> -->
+              <a href="admin-dashboard-light-sidebar.html" class="nav-link active">
+                <i class="fa fa-tachometer"></i><span>Dashboard</span>
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a href="admin-listings.html" class="nav-link ">
+                <i class="fa fa-align-justify"></i><span>Hotels</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="admin-agencies.html" class="nav-link ">
+                <i class="fa fa-building"></i><span>Agencies</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="admin-agents.html" class="nav-link ">
+                <i class="fa fa-briefcase"></i><span>Hotel Owners</span>
+              </a>
+            </li>
+          </ul>
+          <h3>Management Tools</h3>
+          <ul class="nav flex-column">
+		   <li class="nav-item">
+              <a href="admin-users.html" class="nav-link ">
+                <i class="fa fa-users"></i><span>Users</span>
+              </a>
+            </li>
+			
+            <li class="nav-item">
+              <a href="admin-projects.html" class="nav-link ">
+                <i class="fa fa-folder"></i><span>Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="admin-tasks.html" class="nav-link ">
+                <i class="fa fa-file-text"></i><span>Tasks</span>
+              </a>
+            </li>
+			 <li class="nav-item">
+              <a href="admin-tables.html" class="nav-link ">
+                <i class="fa fa-table"></i><span>Tables</span>
+              </a>
+            </li>
+            
+          </ul>
+          <!-- /.nav -->
+        </div>
+        <!-- /.admin-sidebar-content -->
+        <div class="admin-sidebar-footer">
+          <strong>Need a help?</strong>
+          <span>Call us +0-123-456-789</span>
+        </div>
+        <!-- /.admin-sidebar-footer -->
+      </div>
+      <!-- /.admin-sidebar -->
+      <div class="admin-main">
+        <div class="admin-header">
+          <div class="container-fluid">
+            <div class="admin-header-sidebar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="primary-nav-wrapper">
+              
+            </div>
+            
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.admin-header -->
+        <div class="admin-page-title">
+          <div class="container-fluid">
+            <a href="admin-dashboard.html" class="admin-page-title-back">
+              <i class="fa fa-long-arrow-left"></i>
+            </a>
+            <h1>Dashboard <small>Your listings headquarters</small></h1>
+            
+            <!-- /.admin-page-title-actions -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.admin-page-title -->
+        <div class="admin-content">
+          <div class="container-fluid">
+            <!-- <nav class="breadcrumb"> -->
+              <!-- <a class="breadcrumb-item" href="#">Home</a> -->
+              <!-- <a class="breadcrumb-item" href="#">Library</a> -->
+              <!-- <a class="breadcrumb-item" href="#">Data</a> -->
+              <!-- <span class="breadcrumb-item active">Bootstrap</span> -->
+            <!-- </nav> -->
+            <div class="stats">
+              <div class="row">
+                <div class="col-md-6 col-lg-3">
+                  <div class="stat-box stat-box-red">
+                    <div class="stat-box-icon"><i class="fa fa-pie-chart"></i></div>
+                    <strong>$425,123</strong>
+                    <span>Total Earnings</span>
+                  </div>
+                  <!-- /.stat-box -->
+                </div>
+                <!-- /.col-* -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="stat-box stat-box-green">
+                    <div class="stat-box-icon"><i class="fa fa-comments"></i></div>
+                    <strong>4,558</strong>
+                    <span>Pending Comments</span>
+                  </div>
+                  <!-- /.stat-box -->
+                </div>
+                <!-- /.col-* -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="stat-box stat-box-blue">
+                    <div class="stat-box-icon"><i class="fa fa-diamond"></i></div>
+                    <strong>16,584</strong>
+                    <span>Total Objects</span>
+                  </div>
+                  <!-- /.stat-box -->
+                </div>
+                <!-- /.col-* -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="stat-box stat-box-purple">
+                    <div class="stat-box-icon"><i class="fa fa-database"></i></div>
+                    <strong>Very Good</strong>
+                    <span>Database performace</span>
+                  </div>
+                  <!-- /.stat-box -->
+                </div>
+                <!-- /.col-* -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.stats -->
+            <div class="box">
+              <div class="box-inner">
+                <div class="box-title clearfix">
+                  <h2>Current Campaigns</h2>
+                  <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" >
+                      Actions
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Workflow Action</a>
+                      <a class="dropdown-item" href="#">Change Values</a>
+                      <a class="dropdown-item" href="#">Delete Item</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.box-title -->
+                <div class="row">
+                  <div class="col-sm-6 col-md-3">
+                    <div class="stat-progress">
+                      <div class="stat-progress-label">
+                        Onboarding Optimization <span>42%</span>
+                      </div>
+                      <div class="stat-progress-bar">
+                        <div class="stat-progress-bar-inner" style="width: 42%"></div>
+                        <!-- /.stat-progress-inner -->
+                      </div>
+                      <!-- /.stat-progress -->
+                    </div>
+                    <div class="stat-progress">
+                      <div class="stat-progress-label">
+                        E-mail Marketing <span>91%</span>
+                      </div>
+                      <div class="stat-progress-bar">
+                        <div class="stat-progress-bar-inner" style="width: 91%"></div>
+                        <!-- /.stat-progress-inner -->
+                      </div>
+                      <!-- /.stat-progress -->
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="stat-progress">
+                      <div class="stat-progress-label">
+                        E-mail Marketing <span>43%</span>
+                      </div>
+                      <div class="stat-progress-bar">
+                        <div class="stat-progress-bar-inner" style="width: 43%"></div>
+                        <!-- /.stat-progress-inner -->
+                      </div>
+                      <!-- /.stat-progress -->
+                    </div>
+                    <div class="stat-progress">
+                      <div class="stat-progress-label">
+                        Direct Messaging <span>71%</span>
+                      </div>
+                      <div class="stat-progress-bar">
+                        <div class="stat-progress-bar-inner" style="width: 71%"></div>
+                        <!-- /.stat-progress-inner -->
+                      </div>
+                      <!-- /.stat-progress -->
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="stat-progress">
+                      <div class="stat-progress-label">
+                        Direct Messaging <span>97%</span>
+                      </div>
+                      <div class="stat-progress-bar">
+                        <div class="stat-progress-bar-inner" style="width: 97%"></div>
+                        <!-- /.stat-progress-inner -->
+                      </div>
+                      <!-- /.stat-progress -->
+                    </div>
+                    <div class="stat-progress">
+                      <div class="stat-progress-label">
+                        Retargeting <span>46%</span>
+                      </div>
+                      <div class="stat-progress-bar">
+                        <div class="stat-progress-bar-inner" style="width: 46%"></div>
+                        <!-- /.stat-progress-inner -->
+                      </div>
+                      <!-- /.stat-progress -->
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="stat-progress">
+                      <div class="stat-progress-label">
+                        Retargeting <span>54%</span>
+                      </div>
+                      <div class="stat-progress-bar">
+                        <div class="stat-progress-bar-inner" style="width: 54%"></div>
+                        <!-- /.stat-progress-inner -->
+                      </div>
+                      <!-- /.stat-progress -->
+                    </div>
+                    <div class="stat-progress">
+                      <div class="stat-progress-label">
+                        Awarness Campaign <span>45%</span>
+                      </div>
+                      <div class="stat-progress-bar">
+                        <div class="stat-progress-bar-inner" style="width: 45%"></div>
+                        <!-- /.stat-progress-inner -->
+                      </div>
+                      <!-- /.stat-progress -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.box-inner -->
+            </div>
+            <!-- /.box -->
+            <div class="cards-wrapper">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="box">
+                    <div class="box-inner">
+                      <div class="box-title clearfix">
+                        <h2>Most recent listings</h2>
+                      </div>
+                      <!-- /.box-title -->
+                      <div class="cards">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="card card-dark" style="background-image: url(assets/img/tmp/listing-4.jpg);">
+                              <div class="card-inner">
+                                <div class="card-close">
+                                  <i class="fa fa-close"></i>
+                                </div>
+                                <!-- /.card-close -->
+                                <div class="card-attribute">14/07/2017 12:30 - 13:15</div>
+                                <div class="card-content">
+                                  <h2><a href="#">Etiam facilisis sem quis dui tempor commodo</a></h2>
+                                  <p>Donec sollicitudin sem sed purus suscipit sodales. In in mi a turpis consectetur</p>
+                                </div>
+                                <!-- /.card-content -->
+                              </div>
+                              <!-- /.card-inner -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- /.col-* -->
+                          <div class="col-sm-6">
+                            <div class="card card-dark" style="background-image: url(assets/img/tmp/listing-3.jpg);">
+                              <div class="card-inner">
+                                <div class="card-close">
+                                  <i class="fa fa-close"></i>
+                                </div>
+                                <!-- /.card-close -->
+                                <div class="card-attribute">14/07/2017 12:30 - 13:15</div>
+                                <div class="card-content">
+                                  <h2><a href="#">Etiam facilisis sem quis dui tempor commodo</a></h2>
+                                  <p>Donec sollicitudin sem sed purus suscipit sodales. In in mi a turpis consectetur</p>
+                                </div>
+                                <!-- /.card-content -->
+                              </div>
+                              <!-- /.card-inner -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- /.col-* -->
+                          <div class="col-sm-6">
+                            <div class="card card-dark" style="background-image: url(assets/img/tmp/listing-2.jpg);">
+                              <div class="card-inner">
+                                <div class="card-close">
+                                  <i class="fa fa-close"></i>
+                                </div>
+                                <!-- /.card-close -->
+                                <div class="card-attribute">14/07/2017 12:30 - 13:15</div>
+                                <div class="card-content">
+                                  <h2><a href="#">Etiam facilisis sem quis dui tempor commodo</a></h2>
+                                  <p>Donec sollicitudin sem sed purus suscipit sodales. In in mi a turpis consectetur</p>
+                                </div>
+                                <!-- /.card-content -->
+                              </div>
+                              <!-- /.card-inner -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- /.col-* -->
+                          <div class="col-sm-6">
+                            <div class="card card-dark" style="background-image: url(assets/img/tmp/listing-5.jpg);">
+                              <div class="card-inner">
+                                <div class="card-close">
+                                  <i class="fa fa-close"></i>
+                                </div>
+                                <!-- /.card-close -->
+                                <div class="card-attribute">14/07/2017 12:30 - 13:15</div>
+                                <div class="card-content">
+                                  <h2><a href="#">Etiam facilisis sem quis dui tempor commodo</a></h2>
+                                  <p>Donec sollicitudin sem sed purus suscipit sodales. In in mi a turpis consectetur</p>
+                                </div>
+                                <!-- /.card-content -->
+                              </div>
+                              <!-- /.card-inner -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- /.col-* -->
+                        </div>
+                        <!-- /.row -->
+                      </div>
+                      <!-- /.cards -->
+                    </div>
+                    <!-- /.box-inner -->
+                  </div>
+                  <!-- /.box -->
+                </div>
+                <!-- /.col -->
+                <div class="col-lg-6">
+                  <div class="box">
+                    <div class="box-inner">
+                      <div class="box-title clearfix">
+                        <h2>Files uploaded in media</h2>
+                      </div>
+                      <!-- /.box-title -->
+                      <div class="cards">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="card " >
+                              <div class="card-inner">
+                                <div class="card-close">
+                                  <i class="fa fa-close"></i>
+                                </div>
+                                <!-- /.card-close -->
+                                <div class="card-attribute">14/07/2017 12:30 / 987KB</div>
+                                <a href="#" class="card-icon card-blue">
+                                  <span>DOC</span>
+                                </a><!-- /.card-middle -->
+                                <div class="card-content">
+                                  <h2><a href="#">Etiam facilisis sem quis dui tempor commodo</a></h2>
+                                  <p>Donec sollicitudin sem sed purus suscipit sodales. In in mi a turpis consectetur</p>
+                                </div>
+                                <!-- /.card-content -->
+                              </div>
+                              <!-- /.card-inner -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- /.col-* -->
+                          <div class="col-sm-6">
+                            <div class="card " >
+                              <div class="card-inner">
+                                <div class="card-close">
+                                  <i class="fa fa-close"></i>
+                                </div>
+                                <!-- /.card-close -->
+                                <div class="card-attribute">14/07/2017 12:30 / 213KB</div>
+                                <a href="#" class="card-icon card-green">
+                                  <span>XLS</span>
+                                </a><!-- /.card-middle -->
+                                <div class="card-content">
+                                  <h2><a href="#">Etiam facilisis sem quis dui tempor commodo</a></h2>
+                                  <p>Donec sollicitudin sem sed purus suscipit sodales. In in mi a turpis consectetur</p>
+                                </div>
+                                <!-- /.card-content -->
+                              </div>
+                              <!-- /.card-inner -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- /.col-* -->
+                          <div class="col-sm-6">
+                            <div class="card " >
+                              <div class="card-inner">
+                                <div class="card-close">
+                                  <i class="fa fa-close"></i>
+                                </div>
+                                <!-- /.card-close -->
+                                <div class="card-attribute">14/07/2017 12:30 / 987KB</div>
+                                <a href="#" class="card-icon card-blue">
+                                  <span>DOC</span>
+                                </a><!-- /.card-middle -->
+                                <div class="card-content">
+                                  <h2><a href="#">Etiam facilisis sem quis dui tempor commodo</a></h2>
+                                  <p>Donec sollicitudin sem sed purus suscipit sodales. In in mi a turpis consectetur</p>
+                                </div>
+                                <!-- /.card-content -->
+                              </div>
+                              <!-- /.card-inner -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- /.col-* -->
+                          <div class="col-sm-6">
+                            <div class="card " >
+                              <div class="card-inner">
+                                <div class="card-close">
+                                  <i class="fa fa-close"></i>
+                                </div>
+                                <!-- /.card-close -->
+                                <div class="card-attribute">14/07/2017 12:30 / 213KB</div>
+                                <a href="#" class="card-icon card-green">
+                                  <span>XLS</span>
+                                </a><!-- /.card-middle -->
+                                <div class="card-content">
+                                  <h2><a href="#">Etiam facilisis sem quis dui tempor commodo</a></h2>
+                                  <p>Donec sollicitudin sem sed purus suscipit sodales. In in mi a turpis consectetur</p>
+                                </div>
+                                <!-- /.card-content -->
+                              </div>
+                              <!-- /.card-inner -->
+                            </div>
+                            <!-- /.card -->
+                          </div>
+                          <!-- /.col-* -->
+                        </div>
+                        <!-- /.row -->
+                      </div>
+                      <!-- /.cards -->
+                    </div>
+                    <!-- /.box-inner -->
+                  </div>
+                  <!-- /.box -->
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.cards-wrapper -->
+            <div class="box">
+              <div class="box-inner">
+                <div class="box-title clearfix">
+                  <h2>Product sales</h2>
+                  <div class="btn-group" role="group">
+                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" >
+                      Actions
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Workflow Action</a>
+                      <a class="dropdown-item" href="#">Change Values</a>
+                      <a class="dropdown-item" href="#">Delete Item</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.box-title -->
+                <div class="chart"></div>
+              </div>
+              <!-- /.box-inner -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.admin-content -->
+        <div class="admin-footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                &copy; 2017 Created by <a href="http://wearecodevision.com/">Code Vision</a>. All rights reserved.
+              </div>
+              <!-- /.col-* -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+      </div>
+      <!-- /.admin-main -->
+    </div>
+    <!-- /.admin-wrapper -->
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization,places,drawing&amp;key=AIzaSyDmXybAJzoPZ6hH-Jhv7QMCSGgQ6MY8WqY" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/chartist.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-richmarker.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-infobox.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-markerclusterer.js"></script>
+    <script type="text/javascript" src="assets/js/google-map.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.trackpad-scroll-emulator.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.inlinesvg.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.affix.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="assets/libraries/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/nouislider.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.raty.js"></script>
+    <script type="text/javascript" src="assets/js/wNumb.js"></script>
+    <script type="text/javascript" src="assets/js/particles.min.js"></script>
+    <script type="text/javascript" src="assets/js/explorer.js"></script>
+    <script type="text/javascript" src="assets/js/explorer-map-search.js"></script>
+  </body>
+
+<!-- Mirrored from explorer-html.wearecodevision.com/admin-dashboard-light-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 07:26:12 GMT -->
+</html>

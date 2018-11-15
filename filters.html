@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from explorer-html.wearecodevision.com/filters.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 07:26:12 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="assets/libraries/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="assets/libraries/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/trackpad-scroll-emulator.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/chartist.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/jquery.raty.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/nouislider.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/explorer.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+	
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/lightbox.css">
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" /> 
+
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+	
+    <title>Filters - Explorer</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="header-wrapper">
+        <div class="header">
+         <div class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+           
+		   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-center cl-effect-15">
+						<li><a href="index.html" class=" scroll">Home</a></li>
+						<li><a href="explore.html" class="scroll" data-hover="Explore">Explore</a></li>					
+						<li><a href="upcomingevents.html" class="scroll" data-hover="Upcoming Events">Upcoming Events</a></li>
+						<li><a href="albums.html" class="scroll" data-hover="Music Store">Music Store</a></li>
+						<li><a href="news.html" class="scroll" data-hover="News">News</a></li>			
+						<li><a href="upload.html" class="scroll" data-hover="Upload">Upload</a></li>
+						<li><a href="musicschool.html" class="scroll" data-hover="Music School">Music School</a></li>
+						<li><a href="Aboutus.html" class="active scroll" data-hover="About Us">About Us</a></li>	
+						<li><a href="contactus.html" class="scroll" data-hover="Contact Us">Contact Us</a></li>	
+					</ul>	
+					<div class="clearfix"> </div>
+				</div>
+		   </div>	
+		</nav>		
+	</div>	
+            <!-- /.header-inner -->
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.header -->
+      </div>
+      <!-- /.header-wrapper -->
+      <div class="main-wrapper">
+        <div class="main">
+          <div class="main-inner">
+            <div class="page-title">
+             
+              <!-- /.container-->
+            </div>
+            <!-- /.page-title -->
+            <div class="container">
+             
+              <!-- /.filter-tabs -->
+              
+              <!-- /.filter -->
+              <div class="row">
+                <div class="col-md-6 col-lg-3">
+                  <h3 class="page-title-small">White Background Filter</h3>
+                  <div class="filter filter-boxed">
+                    
+                  </div>
+                  <!-- /.filter -->
+                </div>
+                <!-- /.col-* -->
+                <div class="col-md-6 col-lg-3">
+                  <h3 class="page-title-small">Gray Background Filter</h3>
+                  
+                  <!-- /.filter -->
+                </div>
+                <!-- /.col-* -->
+                <div class="col-md-6 col-lg-3">
+                  <h3 class="page-title-small">Primary Background Filter</h3>
+                  
+                  <!-- /.filter -->
+                </div>
+                <!-- /.col-* -->
+                <div class="col-md-6 col-lg-3">
+                  <h3 class="page-title-small">Secondary Background Filter</h3>
+                  <div class="filter filter-boxed filter-secondary checkbox-light">
+                    <form method="get" action="http://explorer-html.wearecodevision.com/filters.html?">
+                      <h2>Search criteria</h2>
+                      <div class="form-group">
+                        <label>Keyword</label>
+                        <input type="text" class="form-control" placeholder="Search by keyword ...">
+                      </div>
+                      <!-- /.form-group -->
+                      <div class="form-group">
+                        <label>City</label>
+                        <select class="form-control">
+                          <option>Location</option>
+                          <option>Chicago</option>
+                          <option>San Francisco</option>
+                          <option>Seattle</option>
+                          <option>New York</option>
+                          <option>Washington</option>
+                        </select>
+                      </div>
+                      <!-- /.form-group -->
+                      <div class="form-group">
+                        <label>Price Slider</label>
+                        <div id="slider" class="price-slider"></div>
+                      </div>
+                      <!-- /.form-group -->
+                      <div class="form-group">
+                        <label>Amenities</label>
+                        <select class="form-control">
+                          <option>Air conditioning</option>
+                          <option>Balcony</option>
+                          <option>Bedding</option>
+                          <option>Cable TV</option>
+                          <option>Cleaning after exit</option>
+                          <option>Cofee pot</option>
+                          <option>Computer</option>
+                          <option>Cot</option>
+                          <option>Dishwasher</option>
+                        </select>
+                      </div>
+                      <!-- /.form-group -->
+                      <div class="row">
+                        <div class="form-group col-xl-6">
+                          <label>Price From</label>
+                          <input type="text" class="form-control" placeholder="Min. price">
+                        </div>
+                        <!-- /.form-group -->
+                        <div class="form-group col-xl-6">
+                          <label>Price To</label>
+                          <input type="text" class="form-control" placeholder="Max. price">
+                        </div>
+                        <!-- /.form-group -->
+                      </div>
+                      <!-- /.row -->
+                      <h2>Category</h2>
+                      <div class="checkbox">
+                        <label><input type="radio" name="form-property-type" value="rent"> Property <span class="label">78</span></label>
+                      </div>
+                      <!-- /.checkbox -->
+                      <div class="checkbox">
+                        <label><input type="radio" name="form-property-type" value="sale"> Restaurant <span class="label">54</span></label>
+                      </div>
+                      <!-- /.checkbox -->
+                      <div class="checkbox">
+                        <label><input type="radio" name="form-property-type" value="sale"> Travel <span class="label">50</span></label>
+                      </div>
+                      <!-- /.checkbox -->
+                      <div class="checkbox">
+                        <label><input type="radio" name="form-property-type" value="lease"> Food &amp; Drink <span class="label">32</span></label>
+                      </div>
+                      <!-- /.checkbox -->
+                      <div class="checkbox">
+                        <label><input type="radio" name="form-property-type" value="lease"> Events <span class="label">53</span></label>
+                      </div>
+                      <!-- /.checkbox -->
+                      <h2>Attributes</h2>
+                      <div class="checkbox">
+                        <label><input type="checkbox"> Reduced <span class="label">93</span></label>
+                      </div>
+                      <!-- /.checkbox -->
+                      <div class="checkbox">
+                        <label><input type="checkbox"> Featured <span class="label">54</span></label>
+                      </div>
+                      <!-- /.checkbox -->
+                      <div class="checkbox">
+                        <label><input type="checkbox"> Verified <span class="label">22</span></label>
+                      </div>
+                      <!-- /.checkbox -->
+                      <div class="form-group-btn form-group-btn-placeholder-gap">
+                        <button type="submit" class="btn btn-primary btn-block">Search</button>
+                      </div>
+                      <!-- /.form-group -->
+                    </form>
+                  </div>
+                  <!-- /.filter -->
+                </div>
+                <!-- /.col-* -->
+              </div>
+            </div>
+            <!-- /.container-fluid -->
+          </div>
+          <!-- /.main-inner -->
+        </div>
+        <!-- /.main -->
+      </div>
+      <!-- /.main-wrapper -->
+      <div class="footer-wrapper">
+        <div class="footer">
+          <div class="footer-inner">
+            <div class="container">
+             
+			 
+			 
+			 
+			 
+			 
+			 
+			 <div class="footup">
+			<div class="container">	
+				<div class="icons wow fadeInUp animated" data-wow-delay=".5s">	
+					<ul>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><img src="images/i1.png" alt=""/></a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><img src="images/i2.png" alt=""/> </a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="Google+"><img src="images/i3.png" alt=""/></a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><img src="images/i4.png" alt=""/> </a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><img src="images/i5.png" alt=""/> </a></li>
+					</ul>
+					<script>$(function () {
+					  $('[data-toggle="tooltip"]').tooltip()
+					})</script>
+				</div>
+				<p class="wow fadeInUp animated" data-wow-delay=".7s">© 2016 MusicBlend . All rights reserved | Designed by <a href="http://w3layouts.com">MusicBlend</a></p>					
+			</div>
+		</div>
+			 
+			 
+			 
+			 
+              <!-- /.row -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.footer-inner -->
+        </div>
+        <!-- /.footer -->
+      </div>
+      <!-- /.footer-wrapper -->
+    </div>
+    <!-- /.page-wrapper -->
+    
+    
+    <!-- /.side-wrapper -->
+    <div class="side-overlay"></div>
+    <!-- /.side-overlay -->
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization,places,drawing&amp;key=AIzaSyDmXybAJzoPZ6hH-Jhv7QMCSGgQ6MY8WqY" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/chartist.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-richmarker.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-infobox.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-markerclusterer.js"></script>
+    <script type="text/javascript" src="assets/js/google-map.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.trackpad-scroll-emulator.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.inlinesvg.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.affix.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="assets/libraries/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/nouislider.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.raty.js"></script>
+    <script type="text/javascript" src="assets/js/wNumb.js"></script>
+    <script type="text/javascript" src="assets/js/particles.min.js"></script>
+    <script type="text/javascript" src="assets/js/explorer.js"></script>
+    <script type="text/javascript" src="assets/js/explorer-map-search.js"></script>
+  </body>
+
+<!-- Mirrored from explorer-html.wearecodevision.com/filters.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 07:26:12 GMT -->
+</html>

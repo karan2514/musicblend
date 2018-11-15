@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from explorer-html.wearecodevision.com/admin-dashboard-light-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 07:15:10 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="assets/libraries/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="assets/libraries/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/trackpad-scroll-emulator.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/chartist.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/jquery.raty.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/nouislider.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/explorer.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <title>Dashboard - Admin - Explorer</title>
+  </head>
+  <body class="admin-sidebar-light">
+    <div class="admin-wrapper">
+      <div class="admin-sidebar">
+        <div class="admin-sidebar-header">
+          <div class="admin-sidebar-logo">
+            <a href="admin-dashboard-light-sidebar.html">
+              <img src="assets/img/logo.svg" class="svg" alt="Home">
+            </a>
+            <a href="admin-dashboard-light-sidebar.html" class="admin-sidebar-logo-title">
+              <strong>Admin</strong>
+              <span>Panel</span>
+            </a>
+          </div>
+          <!-- /.admin-sidebar-logo -->
+        </div>
+        <!-- /.admin-sidebar-header -->
+       <div class="admin-sidebar-content">
+          <h3>General Objects</h3>
+          <ul class="nav flex-column">
+            <!-- <li class="nav-item has-sub-menu"> -->
+              <a href="admin-dashboard-light-sidebar.html" class="nav-link active">
+                <i class="fa fa-tachometer"></i><span>Dashboard</span>
+              </a>
+              
+            </li>
+            <li class="nav-item">
+              <a href="admin-listings.html" class="nav-link ">
+                <i class="fa fa-align-justify"></i><span>Hotels</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="admin-agencies.html" class="nav-link ">
+                <i class="fa fa-building"></i><span>Agencies</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="admin-agents.html" class="nav-link ">
+                <i class="fa fa-briefcase"></i><span>Hotel Owners</span>
+              </a>
+            </li>
+          </ul>
+          <h3>Management Tools</h3>
+          <ul class="nav flex-column">
+		   <li class="nav-item">
+              <a href="admin-users.html" class="nav-link ">
+                <i class="fa fa-users"></i><span>Users</span>
+              </a>
+            </li>
+			
+            <li class="nav-item">
+              <a href="admin-projects.html" class="nav-link ">
+                <i class="fa fa-folder"></i><span>Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="admin-tasks.html" class="nav-link ">
+                <i class="fa fa-file-text"></i><span>Tasks</span>
+              </a>
+            </li>
+			 <li class="nav-item">
+              <a href="admin-tables.html" class="nav-link ">
+                <i class="fa fa-table"></i><span>Tables</span>
+              </a>
+            </li>
+            
+          </ul>
+          <!-- /.nav -->
+        </div>
+        <!-- /.admin-sidebar-content -->
+        <div class="admin-sidebar-footer">
+          <strong>Need a help?</strong>
+          <span>Call us +0-123-456-789</span>
+        </div>
+        <!-- /.admin-sidebar-footer -->
+      </div>
+      <!-- /.admin-sidebar -->
+      <div class="admin-main">
+        <div class="admin-header">
+          <div class="container-fluid">
+            <div class="admin-header-sidebar-toggle toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+           
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.admin-header -->
+        <div class="admin-page-title">
+          <div class="container-fluid">
+            <a href="admin-dashboard-light-sidebar.html" class="admin-page-title-back">
+              <i class="fa fa-long-arrow-left"></i>
+            </a>
+            <h1>Hotels <small> management</small></h1>
+            
+            <!-- /.admin-page-title-actions -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- /.admin-page-title -->
+        <div class="admin-content">
+          <div class="container-fluid">
+            <!-- <nav class="breadcrumb"> -->
+              <!-- <a class="breadcrumb-item" href="#">Home</a> -->
+              <!-- <a class="breadcrumb-item" href="#">Library</a> -->
+              <!-- <a class="breadcrumb-item" href="#">Data</a> -->
+              <!-- <span class="breadcrumb-item active">Bootstrap</span> -->
+            <!-- </nav> -->
+            <div class="table-header clearfix">
+              <div class="table-header-count">
+                <strong>2082</strong> results matching query
+              </div>
+              <!-- /.table-header-count -->
+              <div class="table-header-actions">
+                <a href="#" class="btn btn-primary"><i class="fa fa-filter"></i> Apply filters</a>
+                <a href="#" class="btn"><i class="fa fa-download"></i> Export All</a>
+              </div>
+              <!-- /.table-header-actions -->
+            </div>
+            <!-- /.table-header -->
+            <div class="table-wrapper">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="min-width center"><input type="checkbox"></th>
+                    <th class="min-width center">ID</th>
+                    <th>Title</th>
+                    <th class="min-width center">Category</th>
+                    <th class="min-width center">Price</th>
+                    <th class="min-width center">Featured</th>
+                    <th class="min-width center">Verified</th>
+                    <th class="min-width"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    <td class="min-width center"><input type="checkbox"></td>
+                    <td class="min-width center id">#1</td>
+                    <td>
+                      <div class="avatar squared" style="background-image: url(assets/img/tmp/listing-19.jpg)"></div>
+                      <h2>
+                        <a href="#">Coffee Shop</a>
+                        <span>3006 Par Drive Santa Monica</span>
+                      </h2>
+                    </td>
+                    <td class="min-width no-wrap center">
+                      <span class="tag">Industrial</span>
+                    </td>
+                    <td class="min-width price">
+                      -
+                    </td>
+                    <td class="min-width center">
+                      <div class="status">
+                        <i class="fa fa-check"></i>
+                      </div>
+                      <!-- /.status -->
+                    </td>
+                    <td class="min-width center">
+                      <div class="status">
+                        <i class="fa fa-check"></i>
+                      </div>
+                      <!-- /.status -->
+                    </td>
+                    <td class="min-width">
+                      <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" >
+                          Actions
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Workflow Action</a>
+                          <a class="dropdown-item" href="#">Change Values</a>
+                          <a class="dropdown-item" href="#">Delete Item</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                 
+                 
+                    
+                </tbody>
+              </table>
+            </div>
+            <!-- /.table-wrapper -->
+            <ul class="pagination pull-right">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.admin-content -->
+        <div class="admin-footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6">
+                &copy; 2017 Created by <a href="http://wearecodevision.com/">Code Vision</a>. All rights reserved.
+              </div>
+              <!-- /.col-* -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+      </div>
+      <!-- /.admin-main -->
+    </div>
+    <!-- /.admin-wrapper -->
+    <script src="http://maps.googleapis.com/maps/api/js?libraries=weather,geometry,visualization,places,drawing&amp;key=AIzaSyDmXybAJzoPZ6hH-Jhv7QMCSGgQ6MY8WqY" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/tether.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/chartist.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-richmarker.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-infobox.min.js"></script>
+    <script type="text/javascript" src="assets/js/google-map-markerclusterer.js"></script>
+    <script type="text/javascript" src="assets/js/google-map.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.trackpad-scroll-emulator.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.inlinesvg.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.affix.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="assets/libraries/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/nouislider.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.raty.js"></script>
+    <script type="text/javascript" src="assets/js/wNumb.js"></script>
+    <script type="text/javascript" src="assets/js/particles.min.js"></script>
+    <script type="text/javascript" src="assets/js/explorer.js"></script>
+    <script type="text/javascript" src="assets/js/explorer-map-search.js"></script>
+  </body>
+
+<!-- Mirrored from explorer-html.wearecodevision.com/admin-listings.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Feb 2018 07:26:12 GMT -->
+</html>
