@@ -1,0 +1,92 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+
+<html xmlns:th="https://thymeleaf.org">
+<head th:replace="fragments :: html_head">
+
+<body>
+	<!--header-->
+	<div class="header" id="home">
+		<div class="container">
+			<div id="loginContainer" class="sign-farm">
+				<button type="button" id="loginButton" class="wow fadeInDown animated" data-wow-delay=".5s">
+				<span class="glyphicon glyphicon-user" aria-hidden="true">Login</span></button>
+				<div id="loginBox">                
+					<form id="loginForm">
+						<fieldset id="body">
+							<fieldset>
+								<label for="email">Email Address</label>
+								<input type="text" name="email" id="email">
+							</fieldset>
+							<fieldset>
+								<label for="password">Password</label>
+								<input type="password" name="password" id="password">
+							</fieldset>
+							<input type="submit" id="login" value="Sign in"><br>
+							<fieldset>
+							<a href="registration.html" class="submit" id="reg" value="Register now!">Register now!</a>
+								
+							</fieldset>
+							<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
+						</fieldset>
+						<span><a href="#">Forgot your password?</a></span>
+					</form>
+				</div>
+			</div>			
+			<form class="navbar-form navbar-right search-box wow fadeInDown animated" data-wow-delay=".5s">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+					<button type="submit" class="btn btn-default" aria-label="Left Align">
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</button>
+				</div>
+			</form>	
+			<div class="clearfix"> </div>			
+		</div>	
+	</div>	
+	<!--//header-->
+	<!--navigation-->
+			<div th:replace="fragments :: menu"/>	
+	<!--navigation-->
+
+	
+	<!--news-->
+	<div class="news" id="news">
+		<div class="container">
+			<h3 class="wow fadeInUp animated" data-wow-delay=".5s">News & Events</h3>
+			<div class="news-info">	
+				<div class="col-md-4 news-grids wow zoomIn animated" data-wow-delay=".5s">
+					<h4><span>13/18</span>April</h4>
+					<p>One Republic</p>
+					<p>MMRDA grounds,Mumbai<p>
+						<p>4200 rs.</p>
+						<p> Get your tickets for the "Counting Stars" chartbuster International Band OneRepublic, Live in India for the first time ever!</p>>
+					<a href="#">Read More</a>
+				</div>
+				<div class="col-md-4 news-grids wow zoomIn animated" data-wow-delay=".7s">
+					<h4><span>16/18</span>September</h4>
+					<p>Tribute to Guns n Roses and Ac/Dc</p>
+		             <p>Hard Rock Cafe</p>
+					 <p>750 rs. onwards</p>		
+					<a href="#">Read More</a>
+				</div>
+				<div class="col-md-4 news-grids wow zoomIn animated" data-wow-delay=".9s">
+					<h4><span>05/18</span>december</h4>
+					<p>The Classic Rock Night!</p>
+					<p>118 rs.</p>
+					<p>Ground Floor, Pride Purple Accord, 5 Baner Road, Opp. Veritas, Deron Heights, Pune, Maharashtra 411045, India</p>
+					<a href="#">Read More</a>
+				</div>				
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//news-->
+	
+	<!--//Footer-->	
+	<div th:replace="fragments :: footer"></div>

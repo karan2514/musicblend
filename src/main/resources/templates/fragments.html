@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">
+<head th:fragment="html_head">
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Warbler Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.To(0,1); } </script>
+<!-- //Custom Theme files -->
+<link th:href="@{css/bootstrap.css}" type="text/css" rel="stylesheet" media="all">
+<link th:href="@{css/style.css}" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" th:href="@{css/lightbox.css}">
+<link th:href="@{css/popuo-box.css}" rel="stylesheet" type="text/css" media="all" /> 
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->	
+<!--google-fonts-->
+<link href='//fonts.googleapis.com/css?family=Josefin+Slab:400,100italic,100,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+<!--//google-fonts-->
+<!--pop-up-->
+<script src="js/menu_jquery.js"></script>
+<!--//pop-up-->
+<!--animate-->
+<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+<script src="js/wow.min.js"></script>
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
+</head>
+<body>
+
+<div th:fragment="menu" class="top-nav">
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- 1595 bootstrap -->
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-center cl-effect-15">
+						<li><a href="index">Home</a></li>
+						<li><a th:href="@{/musiclibrary}">Explore</a></li>					
+						<li><a href="upcomingevents" class="" data-hover="Upcoming Events">Upcoming Events</a></li>
+						<li><a href="musicStore" class="" data-hover="Music Store">Music Store</a></li>
+						<li><a href="news" class="" data-hover="News">News</a></li>			
+						<li><a href="upload" class="" data-hover="Upload">Upload</a></li>
+						<li><a href="musicschool" class="" data-hover="Music School">Music School</a></li>
+						<li><a href="aboutus" class="" data-hover="About Us">About Us</a></li>	
+						<li><a href="contactus" class="" data-hover="Contact Us">Contact Us</a></li>	
+				
+				
+					</ul>	
+					<div class="clearfix"> </div>
+				</div>
+			</div>	
+		</nav>		
+	</div>	
+	
+	
+	<!--//Footer-->	
+		<div th:fragment="footer" class="footup">
+			<div class="container">	
+				<div class="icons wow fadeInUp animated" data-wow-delay=".5s">	
+					<ul>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><img src="images/i1.png" alt=""/></a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><img src="images/i2.png" alt=""/> </a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="Google+"><img src="images/i3.png" alt=""/></a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><img src="images/i4.png" alt=""/> </a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><img src="images/i5.png" alt=""/> </a></li>
+					</ul>
+					<script>$(function () {
+					  $('[data-toggle="tooltip"]').tooltip()
+					})</script>
+				</div>
+				<p class="wow fadeInUp animated" data-wow-delay=".7s">© 2016 MusicBlend . All rights reserved | Designed by <a href="http://w3layouts.com">MusicBlend</a></p>					
+			</div>
+		</div>
+
+</body>
+</html>
